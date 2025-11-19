@@ -1,0 +1,270 @@
+Expand your team with Copilot coding agent
+original github octocat
+
+👋 Hey there @Chukslord1! Welcome to your Skills exercise!
+
+In this exercise, you'll unlock the next level of your favorite AI-powered coding assistant. Let's learn how to assign Copilot coding tasks directly in GitHub! 💻✨
+
+✨ This is an interactive, hands-on GitHub Skills exercise!
+
+As you complete each step, I’ll leave updates in the comments:
+
+✅ Check your work and guide you forward
+💡 Share helpful tips and resources
+🚀 Celebrate your progress and completion
+Let’s get started - good luck and have fun!
+
+— Mona
+
+If you encounter any issues along the way please report them here.
+
+Activity
+github-actions
+github-actions commented 9 minutes ago
+github-actions
+bot
+9 minutes ago – with GitHub Actions
+Contributor
+Author
+Step 1: Enable Copilot coding agent
+In the Getting Started with GitHub Copilot exercise, we learned how to use Copilot in our code editor to make major upgrades to the Mergington Extracurricular Activities site. 🎻 ⚽️ ♟️
+
+In fact, the site has become a regular school tool now. And, although you like that attention, you just realized a problem! You are about to go on sabbatical next semester!
+
+After some discussion with the principal, he has accepted that new features will be postponed, but... he is worried. They need to at least have something for handling simple changes while you are away.
+
+Let's set our teachers up for success by enrolling Copilot (in our school) to handle updates while we are away.
+
+📸 Website screenshot
+📖 Theory: Copilot is now your coding agent
+In previous exercises, we used Copilot chat, edits and agent mode. While those were super helpful, Copilot coding agent takes this to the next level by operating entirely on GitHub. No code editor required! 😎
+
+Feature	Copilot in the editor	Copilot coding agent
+Interface	Your code editor	Issues and Pull Requests
+Work Scope	Local files	Repository
+Activation	Inline code suggestions, chat	Issue assignment
+Customization	Custom instructions	Custom instructions
+MCP Support	Yes	Yes
+Vibe Coding	😎	😎
+How does it work?
+From the contributor perspective, the flow is very similar to a normal workflow.
+
+A contributor with write access selects an issue and assigns it to Copilot (instead of themselves).
+Copilot creates a branch and pull request.
+Copilot works on the branch in an Actions workflow and provides updates via the pull request conversation tab.
+When Copilot finishes the issue, the assigner is requested to review.
+Assigner submits a review, adds comments, or approves.
+If feedback is provided, Copilot continues working to implement it.
+The requester repeats above steps until satisfied and then merges.
+
+Is this safe?
+Several security precautions have been implemented to help reduce concerns. Here are a few limitations that you might need to consider when asking Copilot to work on an issue.
+
+Copilot can only make changes on the branch it created and resources provided by the repository.
+Copilot has configurable firewall that restricts access to the internet.
+Only users with write access can assign Copilot an issue.
+Hidden content in issues (like commented code) is ignored.
+Important
+
+The full list of mitigations and configuration settings can be found in the Risks & Mitigations documentation.
+
+⌨️ Activity: (optional) Get to know our extracurricular activities site
+Note
+
+Opening a development environment and running the application is not necessary to complete this exercise. You can skip this activity if desired.
+
+Show Steps
+⌨️ Activity: Enable Copilot coding agent on your repository
+Before we can start delegating requests from the teachers to Copilot, we need to grant access to our repository.
+
+In the top right, click your user icon and select Settings.
+
+
+
+
+
+In the left navigation, expand the Copilot section and select Coding agent.
+
+
+Check that the Repository access field is set to All repositories.
+
+Alternatively, if you prefer to enable it only for this exercise, select Only selected repositories and select this exercise repository (Chukslord1/skills-expand-your-team-with-copilot3).
+
+
+⌨️ Activity: Assign Copilot an issue
+There are several important issues to get done before we leave, but let's do a test run on one of the simple options first. This will let us see how interactions and collaboration work, so we can update our docs for guiding the other teachers. Most don't know how to use a traditional coding editor!
+
+Tip
+
+Try to make an issue's goal and acceptance criteria clear. Also, breaking down large tasks into shorter ones provides more opportunity for feedback!
+
+Go to the Issues tab of this exercise repository and click the New Issue button.
+
+Set the Title to:
+
+Missing Activity: Manga Maniacs
+Enter the below text as description, and click the Create button.
+
+The manga club was recently announced and is naturally missing from the website. Please add it.
+
+Here are the details:
+
+Description: Explore the fantastic stories of the most interesting characters from Japanese Manga (graphic novels).
+
+Schedule: Tuesdays at 7pm
+Max attendance: 15 people
+In the top right, click on the Assignees area and select Copilot.
+
+
+As you assign the issue to Copilot - after a moment, you will notice:
+
+The issue will have an 👀 reaction to show Copilot is reading the issue.
+The activity log shows you assigned the issue to Copilot.
+The issue log includes a linked pull request.
+
+With the issue assigned, Mona should be busy checking your work. Give her a moment to share the next steps.
+
+Having trouble? 🤷
+github-actions
+github-actions commented 9 minutes ago
+github-actions
+bot
+9 minutes ago – with GitHub Actions
+Contributor
+Author
+
+
+Please, follow the steps above.
+I'll watch your progress in the background to provide feedback. 🧐
+
+github-actions
+github-actions commented 3 minutes ago
+github-actions
+bot
+3 minutes ago – with GitHub Actions
+Contributor
+Author
+
+
+🎉🎉🎉 Nice work! Everything is perfect! 🎉🎉🎉
+Preparing content for step 2! One moment... 🤓
+
+github-actions
+github-actions commented 3 minutes ago
+github-actions
+bot
+3 minutes ago – with GitHub Actions
+Contributor
+Author
+Step 2: Collaborate with Copilot
+Now that you've assigned Copilot to your Issue, you can see Copilot also started a Pull Request and linked it to your issue!
+
+Let's learn how to review Copilot's work and provide feedback, just like you would with any team member.
+
+📖 Theory: Understanding Copilot's collaboration workflow
+Copilot provides transparency into its work through multiple channels on the pull request. Let's look into those!
+
+📝 Pull request description
+The description will be continuously updated as Copilot progresses through its work. You can watch the description updates in real time!
+
+🤖 Coding Agent Sessions
+Copilot does all work inside sessions. Each time you assign a task, it analyzes the problem, plans its approach, and implements changes. The first session is started immediately when Coding Agent gets assigned.
+
+In the pull request timeline, you will be able to see progress indicators showing when Copilot starts and completes work
+
+You can access the Coding Session logs in two ways:
+
+🔴 Live: Watch the logs in real-time to see all the steps and logic Copilot Coding Agent session is taking to solve the task
+📋 Review: View the session logs after Copilot has completed its work to review the decisions made
+📸 Copilot Session Logs
+💬 Providing feedback to Copilot
+Once Copilot completes its work, you can collaborate with it just like any team member. The key to effective collaboration is understanding how to trigger new coding sessions:
+
+Copilot will only act on comments or pull request reviews when they include a @copilot mention.
+
+This means you can also leave regular comments for your other, human team members and Copilot won't start unnecessary sessions!
+
+
+⚙️ Important considerations
+Copilot's work is done on a branch with the convention copilot/* and does not have access to other branches
+Copilot cannot trigger Actions workflows. Workflows triggered on pull requests require human approval before running
+Rulesets and similar protections are still enforced
+Tip
+
+All work created by Copilot is committed with the assignee as a co-contributor (keeping your contribution graph safe). 💕
+
+⌨️ Activity: View Copilot's progress
+Navigate to the Pull Request that Copilot referenced in your issue.
+
+Watch in real-time as Copilot updates the pull request description. It will progress through 3 phases:
+
+1. When starting, Copilot provides an initial copy of the issue. [show image]
+2. After planning, Copilot provides a set of action items. [show image]
+3. After finishing, Copilot provides a summary. [show image]
+Scroll down slightly to view the timeline and high-level notes provided by Copilot. Click the View session button.
+
+
+The new page shows a journal of Copilot's work. On the right side, you can see the overview of the pull request being worked on live.
+
+screenshot of copilot coding agent session logs
+If the Copilot session is still ongoing, monitor the session journal.
+
+When Copilot completes its work and requests you as a reviewer of the pull request, you can proceed to the next activity!
+
+Tip
+
+You can use the edited dropdown to view the pull request description change history.
+
+Show image
+⌨️ Activity: Provide Copilot feedback
+Now that Copilot has finished its working session, let's review its work and provide some feedback!
+
+In the pull request, click the Add your review button.
+
+
+Find the new entry created by Copilot. Hover over a line to show the plus sign. Click to open the add comment dialog box.
+
+
+Reading the description, we think it should be more interesting to match the Manga spirit. Let's ask Copilot to fix that. Enter the following text and click Start a review.
+
+@copilot Please change this description to be inspired by Japanese Manga.
+It needs more personality to attract students.
+At the top of the changes list, click the Finish your review button and select Submit Review.
+
+After a moment, Copilot will start working on your requested changes in a new agent session. Click the new View session button that will appear in the pull request timeline.
+
+copilot-working-on-review
+As you can see, Copilot started working on the requested changes in a new session. However, the entire session journal is kept here so you can revisit logs from the previous sessions!
+
+Copilot session journal with multiple sessions
+You can also steer Copilot mid session if you have any extra details you forgot to add initially, or you notice Copilot is heading in the wrong direction.
+
+🪧 Note: This step is optional - if the coding agent session for the requested changes is already finished, don't worry - you can skip this step!
+
+Using the bottom chat panel, right below the session logs - provide this new information that just came up!
+
+There is a slight change of plans - we got a bigger classroom assignment for this class
+
+Let's move the schedule to 5PM tuesday and change the maximum allowed participants to 25.
+Wait for Copilot to finish working on the changes.
+
+🪧 Note: This can take some time! You can monitor the new session or take a break.
+
+Once Copilot is finished, you will get requested as a reviewer again.
+
+Activate the pull requests by clicking the Ready to Review button then click the Merge button.
+
+With the pull request merged, Mona should be checking our work. Give her a moment to respond with the next lesson.
+
+Having trouble? 🤷
+github-actions
+github-actions commented 3 minutes ago
+github-actions
+bot
+3 minutes ago – with GitHub Actions
+Contributor
+Author
+
+
+Please, follow the steps above.
+I'll watch your progress in the background to provide feedback. 🧐
